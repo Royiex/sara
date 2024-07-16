@@ -17,7 +17,13 @@ input.on_gesture(Gesture.TILT_LEFT, on_gesture_tilt_left)
 
 def B():
     basic.clear_screen()
-    basic.show_string("I")
+    basic.show_leds("""
+        . # # # .
+        . . # . .
+        . . # . .
+        . . # . .
+        . # # # .
+        """)
     basic.show_icon(IconNames.SMALL_HEART)
     basic.clear_screen()
     basic.show_string("Sara")
