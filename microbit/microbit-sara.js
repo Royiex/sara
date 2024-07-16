@@ -13,7 +13,13 @@ input.onGesture(Gesture.TiltLeft, function () {
 })
 function B () {
     basic.clearScreen()
-    basic.showString("I")
+    basic.showLeds(`
+        . # # # .
+        . . # . .
+        . . # . .
+        . . # . .
+        . # # # .
+        `)
     basic.showIcon(IconNames.SmallHeart)
     basic.clearScreen()
     basic.showString("Sara")
